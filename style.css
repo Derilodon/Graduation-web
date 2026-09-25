@@ -1,0 +1,137 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav link a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    min-height:calc(100vh - 72px) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: grey;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: aqua;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.story {
+    padding: 100px 2px;
+    background-color: white;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto  70px;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #666;
+    line-height: 1.6;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.timeline-year {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    border-left: 2px solid #111872;
+    padding-left: 30px;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.7;
+}
