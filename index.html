@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
         <div class="logo">
             🎓 Graduation
         </div>
-        <ul class="nav-link">
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <ul class="nav-link" id="nav-link">
             <li><a href="home">Home</a></li>
             <li><a href="story">Story</a></li>
             <li><a href="memories">Memories</a></li>
             <li><a href="message">Message</a></li>
         </ul>
     </nav>
+
 <section class="hero" id="home">
     <div class="hero-content">
         <p class="hero-subtitle">
@@ -113,40 +120,37 @@
     </div>
 </section>
 
-<section class="gallery" id="gallery">
+<section class="memories" id="gallery">
+
     <div class="section-heading">
-        <p class="section-subtitle">Memories</p>
+        <p class="section-subtitle">MEMORIES</p>
 
-        <h2>Moment to Remember</h2>
-        <p>some memories that will always be part of journey</p>
+        <h2>Moments to Remember</h2>
+
+        <p>
+            Open a memory and relive the moment.
+        </p>
     </div>
 
-    <div class="gallery-grid">
+    <div class="memory-container">
 
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div> 
+<div class="memory-box" id="memory-box">
 
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div>
+    <div class="memory-cover">
+        <div class="memory-icon">🎁</div>
 
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div>
+        <h3>Memory #1</h3>
 
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="dummy images.png" alt="">
-        </div>
+        <p>Click to open</p>
     </div>
+
+    <div class="floating-photo">
+        <img src="dummy images.png" alt="Memory photo">
+    </div>
+
+</div>
+    </div>
+
 </section>
 
 <section class="massage" id="massage">
