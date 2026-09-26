@@ -1,404 +1,1174 @@
+/* ==================================================
+   RESET
+================================================== */
+
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+
+
+/* ==================================================
+   GENERAL
+================================================== */
+
+html {
+    scroll-behavior: smooth;
 }
 
-nav {
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #111827;
+
+    overflow-x: hidden;
+
+    background-color: white;
+}
+
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     padding: 20px 40px;
+
+    background-color: #111827;
+
+    position: relative;
+
+    z-index: 100;
 }
 
-.nav-link {
+
+.logo {
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.nav-links {
+
     display: flex;
+
     gap: 30px;
 
     list-style: none;
 }
 
-.nav link a{
+
+.nav-links a {
+
+    color: white;
+
     text-decoration: none;
-    color: black;
+
+    transition: opacity 0.3s ease;
 }
 
+
+.nav-links a:hover {
+
+    opacity: 0.7;
+}
+
+
+
+/* ==================================================
+   HAMBURGER MENU
+================================================== */
+
+.menu-toggle {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
 .hero {
-    min-height:calc(100vh - 72px) ;
+
+    min-height: calc(100vh - 72px);
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
 
     padding: 40px 20px;
 
-    background-color: #111872;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero-subtitle {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 56px;
-    margin-bottom: 20px;
-}
-
-.hero-name {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.hero-description {
-    font-size: 18px;
-    margin: 30px;
-}
-
-.hero-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: aqua;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.story {
-    padding: 100px 2px;
-    background-color: white;
-}
-
-.section-heading {
-    max-width: 700px;
-    margin: 0 auto  70px;
-    text-align: center;
-}
-
-.section-subtitle {
-    font-size: 13px;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-}
-
-.section-heading h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.section-heading > p:last-child {
-    color: #666;
-    line-height: 1.6;
-}
-
-.timeline {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline-item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 30px;
-    padding-bottom: 50px;
-}
-
-.timeline-year {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.timeline-content {
-    border-left: 2px solid #111872;
-    padding-left: 30px;
-}
-
-.timeline-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.timeline-content p {
-    color: #666;
-    line-height: 1.7;
-}
-
-.memories {
-    padding: 100px 20px;
     background-color: #f8f5ef;
 }
 
-.memory-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    margin-top: 50px;
+.hero-content {
+
+    max-width: 800px;
 }
 
-.memory-box {
-    width: 280px;
-    height: 320px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero-subtitle {
 
-    background-color: white;
+    font-size: 14px;
 
-    border-radius: 20px;
+    letter-spacing: 4px;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
-    cursor: pointer;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.memory-box:hover {
-    transform: translateY(-10px);
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.memory-icon {
-    font-size: 70px;
     margin-bottom: 20px;
 }
 
-.memory-box h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+.hero h1 {
+
+    font-size: 56px;
+
+    margin-bottom: 20px;
 }
 
-.memory-box p {
-    color: #777;
-}
 
+.hero-name {
 
+    font-size: 28px;
 
-.massage {
-    padding: 120px 20px;
-
-    background: #111872;
-    color: white;
-
-    text-align: center;
-}
-
-.massage-content {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.massage h2 {
-    font-size: 42px;
-    margin-bottom: 25px;
-}
-
-.massage-text {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #d1d5db;
-    margin-bottom: 25px;
-
-}
-
-.massage-from {
     font-weight: bold;
-}
 
-.footer {
-    padding: 50px 20px;
-
-    background-color: #0b1120;
-    color: white;
-
-    text-align: center;
-}
-
-.footer h2 {
     margin-bottom: 15px;
 }
 
+
+.hero-description {
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #111827;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.hero-button:hover {
+
+    transform: translateY(-3px);
+}
+
+
+
+/* ==================================================
+   SECTION HEADING
+================================================== */
+
+.section-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+
+.section-subtitle {
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading > p:last-child {
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+
+/* ==================================================
+   STORY
+================================================== */
+
+.story {
+
+    padding: 100px 20px;
+
+    background-color: white;
+}
+
+
+.timeline {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 50px;
+}
+
+
+.timeline-year {
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.timeline-content {
+
+    border-left: 2px solid #111827;
+
+    padding-left: 30px;
+}
+
+
+.timeline-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+
+.timeline-content p {
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+
+/* ==================================================
+   MEMORIES
+================================================== */
+
+.memories {
+
+    padding: 100px 20px;
+
+    background-color: #f8f5ef;
+
+    overflow: hidden;
+}
+
+
+.memory-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 500px;
+
+    margin-top: 20px;
+}
+
+
+
+/* ==================================================
+   MEMORY BOX CONTAINER
+================================================== */
+
+.memory-box {
+
+    position: relative;
+
+    width: 360px;
+
+    height: 400px;
+
+    cursor: pointer;
+}
+
+
+
+/* ==================================================
+   GIFT BOX
+================================================== */
+
+.gift-box {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 35px;
+
+    width: 230px;
+
+    height: 200px;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+}
+
+
+
+/* ==================================================
+   BOX BODY
+================================================== */
+
+.box-body {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 230px;
+
+    height: 160px;
+
+    background: linear-gradient(
+        135deg,
+        #d4a373,
+        #b7794b
+    );
+
+    border-radius: 0 0 12px 12px;
+
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+
+
+/* ==================================================
+   VERTICAL RIBBON
+================================================== */
+
+.box-ribbon-vertical {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    width: 42px;
+
+    height: 100%;
+
+    transform: translateX(-50%);
+
+    background-color: #f1d18a;
+
+    z-index: 2;
+}
+
+
+
+/* ==================================================
+   HORIZONTAL RIBBON
+================================================== */
+
+.box-ribbon-horizontal {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 35px;
+
+    width: 100%;
+
+    height: 35px;
+
+    background-color: #f1d18a;
+
+    z-index: 2;
+}
+
+
+
+/* ==================================================
+   BOX LID
+================================================== */
+
+.box-lid {
+
+    position: absolute;
+
+    left: -10px;
+
+    top: 25px;
+
+    width: 250px;
+
+    height: 55px;
+
+    background: linear-gradient(
+        135deg,
+        #e2b27e,
+        #c98b59
+    );
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.2);
+
+    transform-origin: bottom center;
+
+    transition:
+        transform 0.8s cubic-bezier(
+            0.68,
+            -0.55,
+            0.27,
+            1.55
+        );
+
+    z-index: 20;
+}
+
+
+
+/* ==================================================
+   LID RIBBON
+================================================== */
+
+.lid-ribbon {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    width: 42px;
+
+    height: 100%;
+
+    transform: translateX(-50%);
+
+    background-color: #f1d18a;
+}
+
+
+
+/* ==================================================
+   OPEN BOX
+================================================== */
+
+.memory-box.opened .box-lid {
+
+    transform:
+        translateY(-35px)
+        rotateX(65deg)
+        rotateZ(-8deg);
+}
+
+
+
+/* ==================================================
+   MEMORY LABEL
+================================================== */
+
+.memory-label {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -15px;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    z-index: 30;
+
+    width: 250px;
+
+    pointer-events: none;
+}
+
+
+.memory-label h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+.memory-label p {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+
+/* ==================================================
+   FLOATING PHOTOS
+================================================== */
+
+.floating-photo {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 45%;
+
+    width: 145px;
+
+    height: 180px;
+
+    opacity: 0;
+
+    z-index: 5;
+
+    pointer-events: none;
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.1)
+        rotate(0deg);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.8s cubic-bezier(
+            0.17,
+            0.67,
+            0.3,
+            1.3
+        );
+}
+
+
+.floating-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    background-color: white;
+
+    padding: 6px;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 15px 35px rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+
+/* ==================================================
+   PHOTO POSITIONS
+================================================== */
+
+.photo-1 {
+
+    --x: -170px;
+
+    --y: -170px;
+
+    --rotate: -18deg;
+}
+
+
+.photo-2 {
+
+    --x: -70px;
+
+    --y: -235px;
+
+    --rotate: -5deg;
+}
+
+
+.photo-3 {
+
+    --x: 80px;
+
+    --y: -230px;
+
+    --rotate: 8deg;
+}
+
+
+.photo-4 {
+
+    --x: 175px;
+
+    --y: -155px;
+
+    --rotate: 18deg;
+}
+
+
+.photo-5 {
+
+    --x: 0px;
+
+    --y: -290px;
+
+    --rotate: 2deg;
+}
+
+
+
+/* ==================================================
+   PHOTOS COME OUT
+================================================== */
+
+.memory-box.opened .floating-photo {
+
+    opacity: 1;
+
+    transform:
+        translate(
+            calc(-50% + var(--x)),
+            calc(-50% + var(--y))
+        )
+        scale(1)
+        rotate(var(--rotate));
+}
+
+
+
+/* ==================================================
+   FLOATING ANIMATION
+================================================== */
+
+.memory-box.opened .photo-1 {
+
+    animation:
+        photo-float-1 3.2s ease-in-out infinite;
+}
+
+
+.memory-box.opened .photo-2 {
+
+    animation:
+        photo-float-2 3.7s ease-in-out infinite;
+}
+
+
+.memory-box.opened .photo-3 {
+
+    animation:
+        photo-float-3 3.4s ease-in-out infinite;
+}
+
+
+.memory-box.opened .photo-4 {
+
+    animation:
+        photo-float-4 4s ease-in-out infinite;
+}
+
+
+.memory-box.opened .photo-5 {
+
+    animation:
+        photo-float-5 3.6s ease-in-out infinite;
+}
+
+
+
+/* ==================================================
+   PHOTO ANIMATION 1
+================================================== */
+
+@keyframes photo-float-1 {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            rotate(-18deg);
+    }
+
+    50% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x) - 8px),
+                calc(-50% + var(--y) - 15px)
+            )
+            rotate(-12deg);
+    }
+}
+
+
+
+/* ==================================================
+   PHOTO ANIMATION 2
+================================================== */
+
+@keyframes photo-float-2 {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            rotate(-5deg);
+    }
+
+    50% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x) + 5px),
+                calc(-50% + var(--y) - 20px)
+            )
+            rotate(2deg);
+    }
+}
+
+
+
+/* ==================================================
+   PHOTO ANIMATION 3
+================================================== */
+
+@keyframes photo-float-3 {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            rotate(8deg);
+    }
+
+    50% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x) + 8px),
+                calc(-50% + var(--y) - 18px)
+            )
+            rotate(14deg);
+    }
+}
+
+
+
+/* ==================================================
+   PHOTO ANIMATION 4
+================================================== */
+
+@keyframes photo-float-4 {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            rotate(18deg);
+    }
+
+    50% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x) + 10px),
+                calc(-50% + var(--y) - 12px)
+            )
+            rotate(12deg);
+    }
+}
+
+
+
+/* ==================================================
+   PHOTO ANIMATION 5
+================================================== */
+
+@keyframes photo-float-5 {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            rotate(2deg);
+    }
+
+    50% {
+
+        transform:
+            translate(
+                calc(-50% + var(--x) - 5px),
+                calc(-50% + var(--y) - 22px)
+            )
+            rotate(-5deg);
+    }
+}
+
+
+
+/* ==================================================
+   MESSAGE
+================================================== */
+
+.message {
+
+    padding: 120px 20px;
+
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.message-content {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+.message h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+}
+
+
+.message-text {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #d1d5db;
+
+    margin-bottom: 25px;
+}
+
+
+.message-from {
+
+    font-weight: bold;
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+
+    padding: 50px 20px;
+
+    background-color: #0b1120;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.footer h2 {
+
+    margin-bottom: 15px;
+}
+
+
 .footer p {
+
     color: #9ca3af;
+
     margin-bottom: 20px;
 }
 
+
 .footer .copyright {
+
     font-size: 14px;
+
     margin-bottom: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
 
 @media (max-width: 768px) {
 
+
+    /* NAVBAR */
+
     .navbar {
-        position: relative;
+
         padding: 18px 20px;
     }
 
+
     .menu-toggle {
+
         display: block;
     }
 
+
     .nav-links {
+
         display: none;
 
         position: absolute;
+
         top: 100%;
+
         left: 0;
 
         width: 100%;
 
         flex-direction: column;
+
         gap: 0;
 
         background-color: #111827;
     }
 
+
     .nav-links.active {
+
         display: flex;
     }
 
+
     .nav-links li {
+
         width: 100%;
     }
 
+
     .nav-links a {
+
         display: block;
+
         padding: 15px 20px;
     }
 
+
+
+    /* HERO */
+
     .hero h1 {
+
         font-size: 40px;
     }
 
+
+
+    /* SECTION */
+
     .section-heading h2 {
+
         font-size: 32px;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+
+    /* TIMELINE */
+
+    .timeline-item {
+
+        grid-template-columns: 70px 1fr;
+
+        gap: 15px;
     }
+
+
+    .timeline-content {
+
+        padding-left: 20px;
+    }
+
+
+
+    /* MESSAGE */
 
     .message h2 {
+
         font-size: 34px;
     }
-}
 
-.menu-toggle {
-    display: none;
 
-    background: none;
-    border: none;
 
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
+    /* MEMORY */
 
-.memory-box.opened {
-    transform: scale(1.05);
-}
+    .memory-container {
 
-.memory-box {
-    position: relative;
-}
-
-.memory-cover {
-    position: relative;
-    z-index: 2;
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: white;
-
-    border-radius: 20px;
-}
-
-.floating-photo {
-    position: absolute;
-
-    width: 180px;
-    height: 220px;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%) scale(0.5);
-
-    opacity: 0;
-
-    z-index: 1;
-
-    pointer-events: none;
-
-    transition:
-        transform 0.6s ease,
-        opacity 0.4s ease;
-}
-
-.floating-photo img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-}
-
-.memory-box.opened .floating-photo {
-    animation: floating 3s ease-in-out infinite;
-}
-
-@keyframes floating {
-
-    0% {
-        transform:
-            translate(-50%, -140%)
-            rotate(-5deg);
+        min-height: 430px;
     }
 
-    50% {
-        transform:
-            translate(-50%, -150%)
-            rotate(5deg);
+
+    .memory-box {
+
+        width: 320px;
+
+        height: 380px;
     }
 
-    100% {
+
+    .gift-box {
+
         transform:
-            translate(-50%, -140%)
-            rotate(-5deg);
+            translateX(-50%)
+            scale(0.85);
+
+        transform-origin: bottom center;
+    }
+
+
+    .floating-photo {
+
+        width: 105px;
+
+        height: 135px;
+    }
+
+
+    .photo-1 {
+
+        --x: -100px;
+
+        --y: -120px;
+    }
+
+
+    .photo-2 {
+
+        --x: -45px;
+
+        --y: -180px;
+    }
+
+
+    .photo-3 {
+
+        --x: 50px;
+
+        --y: -175px;
+    }
+
+
+    .photo-4 {
+
+        --x: 105px;
+
+        --y: -115px;
+    }
+
+
+    .photo-5 {
+
+        --x: 0px;
+
+        --y: -220px;
     }
 
 }

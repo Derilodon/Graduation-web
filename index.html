@@ -1,193 +1,529 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Graduation Website</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
+
+
 <body>
-    <nav>
+
+
+    <!-- ==================================================
+         NAVBAR
+    =================================================== -->
+
+    <nav class="navbar">
+
         <div class="logo">
             🎓 Graduation
         </div>
 
-        <button class="menu-toggle" id="menu-toggle">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+        >
             ☰
         </button>
 
-        <ul class="nav-link" id="nav-link">
-            <li><a href="home">Home</a></li>
-            <li><a href="story">Story</a></li>
-            <li><a href="memories">Memories</a></li>
-            <li><a href="message">Message</a></li>
+
+        <ul
+            class="nav-links"
+            id="nav-links"
+        >
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#story">
+                    Story
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    Memories
+                </a>
+            </li>
+
+            <li>
+                <a href="#message">
+                    Message
+                </a>
+            </li>
+
         </ul>
+
     </nav>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="hero-subtitle">
-            CONGRATULATION
-        </p>
-
-        <h1>Finally, I Graduate</h1>
-
-        <p class="hero-name">
-            Nama
-        </p>
-
-        <p class="hero-description">
-            One journey ends, Another begin.
-        </p>
-
-        <a href="#story" class="hero-button">
-            My Journey
-        </a>
-
-    </div>
-</section>
 
 
-<section class="story" id="story">
-    <div class="section-heading">
-        <p class="section-subtitle">THE JOURNEY</p>
-        <h2>Every Step Has A Story</h2>
-        <p>A few moment from the journey that led to this special day</p>
+    <!-- ==================================================
+         HERO
+    =================================================== -->
 
-    </div>
+    <section
+        class="hero"
+        id="home"
+    >
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <span class="timeline-year">2022</span>
+        <div class="hero-content">
 
-            <div class="timeline-content">
-                <h3>The Beginning</h3>
-                <p>The first step into a new chapter, filled with excitement, challenge, and new experiences.</p>
-            </div>
+            <p class="hero-subtitle">
+                CONGRATULATIONS
+            </p>
+
+
+            <h1>
+                Finally, I Graduated!
+            </h1>
+
+
+            <p class="hero-name">
+                Nama Teman
+            </p>
+
+
+            <p class="hero-description">
+                One journey ends, another begins.
+            </p>
+
+
+            <a
+                href="#story"
+                class="hero-button"
+            >
+                My Journey
+            </a>
+
         </div>
-    </div>
-<section class="story" id="story">
-    <div class="section-heading">
-        <p class="section-subtitle">THE JOURNEY</p>
-        <h2>Every Step Has A Story</h2>
-        <p>A few moment from the journey that led to this special day</p>
 
-    </div>
+    </section>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <span class="timeline-year">2022</span>
 
-            <div class="timeline-content">
-                <h3>The Beginning</h3>
-                <p>The first step into a new chapter, filled with excitement, challenge, and new experiences.</p>
-            </div>
+
+    <!-- ==================================================
+         STORY / JOURNEY
+    =================================================== -->
+
+    <section
+        class="story"
+        id="story"
+    >
+
+        <div class="section-heading">
+
+            <p class="section-subtitle">
+                THE JOURNEY
+            </p>
+
+
+            <h2>
+                Every Step Has a Story
+            </h2>
+
+
+            <p>
+                A few moments from the journey
+                that led to this special day.
+            </p>
+
         </div>
-    </div>
-    <div class="timeline">
-        <div class="timeline-item">
-            <span class="timeline-year">2023</span>
 
-            <div class="timeline-content">
-                <h3>Growing & Learning</h3>
-                <p>Discovering new things, meeting amazing people,
-                    and creating unforgettable memories.</p>
+
+
+        <div class="timeline">
+
+
+            <!-- 2022 -->
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2022
+                </span>
+
+
+                <div class="timeline-content">
+
+                    <h3>
+                        The Beginning
+                    </h3>
+
+
+                    <p>
+                        The first step into a new chapter,
+                        filled with excitement, challenges,
+                        and new experiences.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </div>
-    <div class="timeline">
-        <div class="timeline-item">
-            <span class="timeline-year">2025</span>
 
-            <div class="timeline-content">
-                <h3>The Final Chpater</h3>
-                <p>The final years brought new challenges and
-                    countless moments worth remembering.</p>
+
+
+            <!-- 2023 -->
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2023
+                </span>
+
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Growing & Learning
+                    </h3>
+
+
+                    <p>
+                        Discovering new things,
+                        meeting amazing people,
+                        and creating unforgettable memories.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </div>
-    <div class="timeline">
-        <div class="timeline-item">
-            <span class="timeline-year">2026</span>
 
-            <div class="timeline-content">
-                <h3>Graduation 🎓</h3>
-                <p>After years of learning, growing, and persevering,
-                    the moment has finally arrived.</p>
+
+
+            <!-- 2025 -->
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2025
+                </span>
+
+
+                <div class="timeline-content">
+
+                    <h3>
+                        The Final Chapter
+                    </h3>
+
+
+                    <p>
+                        The final years brought new challenges
+                        and countless moments worth remembering.
+                    </p>
+
+                </div>
+
             </div>
+
+
+
+            <!-- 2026 -->
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2026
+                </span>
+
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Graduation 🎓
+                    </h3>
+
+
+                    <p>
+                        After years of learning, growing,
+                        and persevering, the moment has finally arrived.
+                    </p>
+
+                </div>
+
+            </div>
+
+
         </div>
-    </div>
-</section>
 
-<section class="memories" id="gallery">
+    </section>
 
-    <div class="section-heading">
-        <p class="section-subtitle">MEMORIES</p>
 
-        <h2>Moments to Remember</h2>
 
-        <p>
-            Open a memory and relive the moment.
-        </p>
-    </div>
+    <!-- ==================================================
+         MEMORIES
+    =================================================== -->
 
-    <div class="memory-container">
+    <section
+        class="memories"
+        id="gallery"
+    >
 
-<div class="memory-box" id="memory-box">
 
-    <div class="memory-cover">
-        <div class="memory-icon">🎁</div>
+        <div class="section-heading">
 
-        <h3>Memory #1</h3>
+            <p class="section-subtitle">
+                MEMORIES
+            </p>
 
-        <p>Click to open</p>
-    </div>
 
-    <div class="floating-photo">
-        <img src="dummy images.png" alt="Memory photo">
-    </div>
+            <h2>
+                Moments to Remember
+            </h2>
 
-</div>
-    </div>
 
-</section>
+            <p>
+                Open the box and relive the moments.
+            </p>
 
-<section class="massage" id="massage">
-    <div class="massage-content">
-        <p class="section-subtitle">A MASSAGE</p>
+        </div>
 
-        <h2>You Made It This Far.</h2>
 
-        <p class="masssage-text">
-            Congratulations on this incredible achievement.
-            May this graduation be the beginning of many
-            wonderful things to come.
-        </p>
 
-        <p class="massage-from">
-            - From asdasdasdas
-        </p>
-    </div>
-</section>
+        <div class="memory-container">
 
-<footer class="footer">
 
-    <div class="footer-content">
+            <!-- ==================================================
+                 MEMORY BOX
+            =================================================== -->
 
-        <h2>🎓 Graduation</h2>
+            <div
+                class="memory-box"
+                id="memory-box"
+            >
 
-        <p>
-            Celebrating the journey, the memories,
-            and a new beginning.
-        </p>
 
-        <p class="copyright">
-            © 2026 Graduation Website
-        </p>
+                <!-- ==================================================
+                     FLOATING PHOTO 1
+                =================================================== -->
 
-    </div>
+                <div class="floating-photo photo-1">
 
-</footer>
+                    <img
+                        src="assets/images/photo1.jpg"
+                        alt="Memory 1"
+                    >
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     FLOATING PHOTO 2
+                =================================================== -->
+
+                <div class="floating-photo photo-2">
+
+                    <img
+                        src="assets/images/photo2.jpg"
+                        alt="Memory 2"
+                    >
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     FLOATING PHOTO 3
+                =================================================== -->
+
+                <div class="floating-photo photo-3">
+
+                    <img
+                        src="assets/images/photo3.jpg"
+                        alt="Memory 3"
+                    >
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     FLOATING PHOTO 4
+                =================================================== -->
+
+                <div class="floating-photo photo-4">
+
+                    <img
+                        src="assets/images/photo4.jpg"
+                        alt="Memory 4"
+                    >
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     FLOATING PHOTO 5
+                =================================================== -->
+
+                <div class="floating-photo photo-5">
+
+                    <img
+                        src="assets/images/photo5.jpg"
+                        alt="Memory 5"
+                    >
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     GIFT BOX
+                =================================================== -->
+
+                <div class="gift-box">
+
+
+                    <!-- BOX BODY -->
+
+                    <div class="box-body">
+
+                        <div class="box-ribbon-vertical"></div>
+
+                        <div class="box-ribbon-horizontal"></div>
+
+                    </div>
+
+
+
+                    <!-- BOX LID -->
+
+                    <div class="box-lid">
+
+                        <div class="lid-ribbon"></div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     LABEL
+                =================================================== -->
+
+                <div class="memory-label">
+
+                    <h3>
+                        Memory Box
+                    </h3>
+
+
+                    <p>
+                        Click to open
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         MESSAGE
+    =================================================== -->
+
+    <section
+        class="message"
+        id="message"
+    >
+
+        <div class="message-content">
+
+
+            <p class="section-subtitle">
+                A MESSAGE
+            </p>
+
+
+            <h2>
+                You Made It This Far.
+            </h2>
+
+
+            <p class="message-text">
+
+                Congratulations on this incredible achievement.
+                May this graduation be the beginning of many
+                wonderful things to come.
+
+            </p>
+
+
+            <p class="message-from">
+                — From Your Friends
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <h2>
+                🎓 Graduation
+            </h2>
+
+
+            <p>
+                Celebrating the journey,
+                the memories, and a new beginning.
+            </p>
+
+
+            <p class="copyright">
+                © 2026 Graduation Website
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
